@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_transp_bg"
+    android:paddingTop="24dp"    >
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hapus Data!"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="16dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/dialog_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apakah kamu ingin menghapus data?"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="16dp"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textColor="@color/skyBlue"
+            android:textStyle="bold"
+            android:paddingVertical="16dp"
+            android:clipToOutline="true"
+            android:textSize="20dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/button_dialog_cancel_bg"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:paddingVertical="16dp"
+            android:clipToOutline="true"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/button_dialog_confirm_bg"/>
+    </LinearLayout>
+</LinearLayout>
