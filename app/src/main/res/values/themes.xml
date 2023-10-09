@@ -5,5 +5,7 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.Christina_ujian2" parent="Base.Theme.Christina_ujian2" />
+    <style name="Theme.Christina_ujian2" parent="Base.Theme.Christina_ujian2" >
+         <item name="colorPrimary">@color/darkBlue</item>
+    </style>
 </resources>
